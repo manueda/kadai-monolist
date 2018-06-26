@@ -10,6 +10,11 @@
                         <div class="panel-body">
                             <p class="item-title"><a href="#">{{ $item->name }}</a></p>
                         </div>
+                        <div class="buttons text-center">
+                                @if (Auth::check())
+                                    @include('items.want_button', ['item' => $item])
+                                @endif
+                            </div>
                     </div>
                 </div>
             </div>
