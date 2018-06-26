@@ -19,7 +19,7 @@
                 <li>
                     <div class="status-label">HAVE</div>
                     <div id="have_count" class="status-value">
-                        xxx
+                        {{ $count_have }}
                     </div>
                 </li>
             </ul>
@@ -27,4 +27,4 @@
     </div>
     @include('items.items', ['items' => $items])
     {!! $items->render() !!}
-@endsections
+@endsection
